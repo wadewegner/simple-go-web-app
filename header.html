@@ -1,0 +1,29 @@
+{{define "header"}}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{.Title}}</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<style type="text/css">
+			body {padding-bottom: 70px;}
+			.content {margin:10px;}
+		</style>
+	</head>
+	<body>
+	    <nav class="navbar navbar-default" role="navigation">
+	      <div class="navbar-header">
+	        <a class="navbar-brand" href="/">Simple Go App</a>
+	      </div>
+	      <div class="collapse navbar-collapse navbar-ex1-collapse">  
+	        <ul class="nav navbar-nav">
+	        	<li><a href="/">Home</a></li>
+	        	<li><a href="/route1">Route1</a></li>
+	        	<li><a href="/route2/param1">Route2</a></li>
+	        	<li><a href="/route3/param2/23">Route3</a></li>
+	        </ul>
+	      </div>
+	    </nav>
+
+{{end}}
